@@ -1,0 +1,13 @@
+<h2>Edit Course</h2>
+<%= form_for @course do|f|%>
+<div>
+	course name
+	<%=f.text_field :name %>
+</div>
+
+<div>
+	course info
+	<%=f.text_area :context%>
+</div>
+<%=f.submit%>
+<%end%>
